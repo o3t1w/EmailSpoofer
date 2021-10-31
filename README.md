@@ -1,20 +1,18 @@
-# Zaqar: The Email Spoofer v1.3
+# o3t1w: The Email Spoofer v1.3
 A powerful PHP email spoofer with a polished UI, rich text editor, and multiple sending options.
-
-<img src="https://github.com/TobinShields/Zaqar_Mailer/blob/master/img/screenshots.png?raw=true" width="100%">
 
 ## What's new in v1.3?
 ### Added
 1. Users can now upload attachments! This feature has been tested and works using .png, .docx, and .pdf files. Has not been tested using possibly malicious payloads for a target--although, if it passes the email virus scan then it should be fine.
 ### Changed
-2. Zaqar is now no longer using the default mail() function to send emails, but instead using the PHPMailer library. This appears to be the cleaner way to send messages overall, plus it was what easily allowed for attachments. Will continue to experiment with more features of this lib.   
+2. o3t1w email spoofer is now no longer using the default mail() function to send emails, but instead using the PHPMailer library. This appears to be the cleaner way to send messages overall, plus it was what easily allowed for attachments. Will continue to experiment with more features of this lib.   
 
 ## How to install and use
-To use Zaqar you first need to have access to a webserver that has SMTP and PHP enabled. Most web hosting companies have this enabled by default and require no setup.  Zaqar, like all PHP email spoofers, will not work without this kind of service as you need to have a mail server for the PHP mail() function to work. To get Zaqar setup you will need to move through the following steps:
+To use o3t1w email spoofer you first need to have access to a webserver that has SMTP and PHP enabled. Most web hosting companies have this enabled by default and require no setup.  o3t1w email spoofer, like all PHP email spoofers, will not work without this kind of service as you need to have a mail server for the PHP mail() function to work. To get o3t1w email spoofer setup you will need to move through the following steps:
 
-1. First, make sure you download the full Zaqar_EmailSpoofer folder and then upload it onto the root directory of your web server (unzipped). This can be done using an FTP client or the file manager provided by your hosting service. There are tons of guides on how to do this—if you need help, check your web hosting FAQs as they will likely have an entry on uploading files and folders using FTP or their file manager.
+1. First, make sure you download the full o3t1w email spoofer folder and then upload it onto the root directory of your web server (unzipped). This can be done using an FTP client or the file manager provided by your hosting service. There are tons of guides on how to do this—if you need help, check your web hosting FAQs as they will likely have an entry on uploading files and folders using FTP or their file manager.
 
-2. Once the file is uploaded you should navigate to the application file by typing http://[YOUR_DOMAIN_NAME]/Zaqar_EmailSpoofer/index.html into your URL bar. From that point you should be able to see the application. There is no additional configuration or installation needed.
+2. Once the file is uploaded you should navigate to the application file by typing http://[YOUR_DOMAIN_NAME]/spoof/index.html into your URL bar. From that point you should be able to see the application. There is no additional configuration or installation needed.
 
 3. To actually use the application you simply populate the form. Make sure that you keep in mind that the "from" address is who you are spoofing, and that the "to" address is who you actually want to receive your message. You will need to indicate that you are not using the spoofer for evil before you can submit your message. If there were no errors then you should get a success message saying that the email was sent. You can type the body of your message using rich text or raw text.
 
@@ -24,11 +22,11 @@ Keep in mind that if you are using a cheap or low-quality hosting provider there
 
 If you run into issues or need help getting this set up please post in the “issues” section so that we can get it working for you.  
 
-## What makes Zaqar different?
-Search for “PHP Mail Spoofer” and you will get dozens of GitHub pages that host a simple PHP script and poorly designed HTML form. Frankly speaking, these applications look ugly and their options are limited. Few offer the ability to craft the spoofed message using a rich text editor—which is a critical feature in order to build believable messages. Additionally, Zaqar allows users to send using the To, Cc, and Bcc fields for greater control over how messages are sent. Users can also upload attachments to the email, which is important if a penetration tester is attempting to send a payload to a target via email. Zaqar was built to be the tool that you keep coming back to: both for its sleek and modern UI, and simple but powerful spoofing and mail features.  Using Bootstrap as the front-end framework, Simditor as the rich text editor, and PHPmailer as the mail script library, Zaqar was built to be easy to use allow you to build believable messages. This will be the only mail spoofer you will ever need. 
+## What makes o3t1w email spoofer different?
+Search for “PHP Mail Spoofer” and you will get dozens of GitHub pages that host a simple PHP script and poorly designed HTML form. Frankly speaking, these applications look ugly and their options are limited. Few offer the ability to craft the spoofed message using a rich text editor—which is a critical feature in order to build believable messages. Additionally, o3t1w email spoofer allows users to send using the To, Cc, and Bcc fields for greater control over how messages are sent. Users can also upload attachments to the email, which is important if a penetration tester is attempting to send a payload to a target via email. o3t1w email spoofer was built to be the tool that you keep coming back to: both for its sleek and modern UI, and simple but powerful spoofing and mail features.  Using Bootstrap as the front-end framework, Simditor as the rich text editor, and PHPmailer as the mail script library, o3t1w email spoofer was built to be easy to use allow you to build believable messages. This will be the only mail spoofer you will ever need. 
 
-## What Does Zaqar Mean?
-In Mesopotamian mythology, Zaqar is the messenger of the god Sin. He relays these messages to mortals through his power over their dreams and nightmares. Seemed fitting and less dull than "Email Spoofer".
+## What Does o3t1w email spoofer Mean?
+In Mesopotamian mythology, o3t1w email spoofer is the messenger of the god Sin. He relays these messages to mortals through his power over their dreams and nightmares. Seemed fitting and less dull than "Email Spoofer".
 
 ## Disclaimer and Terms of Usage
 By using this application you are agreeing to only send a spoofed email if either of the two situation are true:
@@ -39,5 +37,4 @@ By using this application you are agreeing to only send a spoofed email if eithe
 
 Using this application for any other reason falls outside of its intended use and is not endorsed, encouraged, or approved by the application’s creator or its contributors. This is especially true if this application is being used to send spam messages or commit fraud. This mailer does little to protect the identity of where it was truly sent and the message can be easily tracked back to the originator.  It only masks the identity on a surface level inside of a mail client.
 
-## Want to contribute? We have stuff to do!
-Check out [the changelog](https://github.com/TobinShields/Zaqar_EmailSpoofer/blob/master/changelog.md) for projects and 'wish list' items! This project can be made better by you.
+Project is a fork of TobinShields/Zaqar_EmailSpoofer
